@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Xfce</Name>
+	<MergeFile type="parent">/etc/xdg/xdg-xubuntu/menus/xfce-applications.menu</MergeFile>
+	<Menu>
+		<Name>wine-wine</Name>
+		<DirectoryDir>/home/sam/.local/share/desktop-directories</DirectoryDir>
+	</Menu>
+	<AppDir>/home/sam/.local/share/applications</AppDir>
+	<Layout>
+		<Merge type="menus"/>
+		<Menuname>wine-wine</Menuname>
+		<Filename>firefox.desktop</Filename>
+		<Filename>xfce4-terminal.desktop</Filename>
+		<Filename>transmission-gtk.desktop</Filename>
+		<Menuname>Applications</Menuname>
+		<Separator/>
+		<Filename>xfce4-session-logout.desktop</Filename>
+		<Merge type="files"/>
+	</Layout>
+</Menu>

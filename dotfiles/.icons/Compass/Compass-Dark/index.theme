@@ -1,0 +1,14 @@
+[Icon Theme]
+Name=Compass-Dark
+Comment=Alternative icon theme for Nitrux
+Inherits=Compass
+Example=x-directory-normal
+
+Directories=status/big
+
+[status/big]
+Size=96
+Context=Status
+Type=Scalable
+MinSize=22
+MaxSize=96

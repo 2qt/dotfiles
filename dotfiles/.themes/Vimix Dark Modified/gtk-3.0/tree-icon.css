@@ -1,0 +1,188 @@
+/***********************
+ * Tree and Icon views *
+ ***********************/
+GtkTreeView {
+    -GtkTreeView-vertical-separator: 0;
+    -GtkTreeView-expander-size: 17;
+}
+
+GtkTreeView.dnd {
+    border-color: @theme_text_color;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: none;
+}
+
+GtkViewport {
+    background-color: transparent;
+}
+GtkIconView.view {
+    border-style: none;   
+    background-color: @theme_base_color;
+}
+GtkIconView.view.cell:selected,
+GtkIconView.view.cell:selected:focus {
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+ 
+}
+.view,
+GtkTreeView {
+    border-style: none;
+    background-color: @theme_base_color;
+    color: @theme_text_color;
+    padding: 4px;
+}
+.view:selected,
+GtkTreeView:selected {
+    background-color: @theme_selected_bg_color; 
+    color: @theme_selected_fg_color;
+    border-width: 0;  
+}
+.view:insensitive,
+GtkTreeView:insensitive {
+    background-color: transparent;
+    color: @insensitive_entry_fg_color;
+}
+
+column-header.button,
+column-header .button {
+    padding: 3px; 
+    border-style: none;
+    background-color: @insensitive_bg_trough_color;
+    box-shadow: none;
+    color: @theme_fg_color;         
+}
+
+column-header.button,
+column-header .button,
+column-header.button:insensitive,
+column-header .button:insensitive,
+column-header.button:hover,
+column-header .button:hover {
+    background-color: @insensitive_bg_trough_color;
+    border-style: none;
+    border-image: none;
+    background-image: none;
+    box-shadow: none;
+    icon-shadow: none;
+    font-weight: bold; /* Not sure about this one */
+}
+column-header.button *:hover,
+column-header .button *:hover {
+    box-shadow: none;
+    color: @theme_hover_fg_color;
+}
+column-header.button:active,
+column-header .button:active {
+    border-image: none;
+    background-image: none;
+    background-color: @insensitive_bg_trough_color;
+    box-shadow: none;
+}
+
+column-header.button *:insensitive,
+column-header .button *:insensitive {
+    box-shadow: none;
+    color: @insensitive_fg_color; 
+}
+
+column-header.button *:active,
+column-header .button *:active {
+    color: @theme_hover_fg_color;
+    icon-shadow: none;
+}
+
+.cell {
+    background-color: @theme_base_color;
+    color: @theme_text_color;
+    border-style: none;
+    padding: 4px;
+}
+
+.cell:selected,
+.cell:selected:insensitive {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+.cell.entry {
+    background-color: shade(white, 0.95);
+}
+.cell.entry:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+.cell:hover {
+    color: @theme_hover_fg_color;
+}
+.cell:hover:selected {
+    color: @selected_hover_fg_color;
+}
+.expander,
+.expander row {
+    engine: adwaita;
+	color: @theme_fg_color;
+	border-color: @theme_fg_color;
+}
+.expander row:selected,
+.expander row:selected:focus {
+    engine: adwaita;
+	color: white;
+	border-color: white;
+}
+.expander row:selected:active,
+.expander row:selected:focus:active {
+    engine: adwaita;
+	color: white;
+	border-color: white;
+}
+.expander row:active,
+.expander:active {
+    engine: adwaita;
+	color: @theme_fg_color;
+	border-color: @theme_fg_color;
+}
+.expander:hover,
+.expander row:hover {
+    engine: adwaita;
+	color: @panel_color;
+	border-color: @panel_color;
+}
+.expander row:selected:hover,
+.expander row:selected:focus:hover {
+    engine: adwaita;
+	color: white;
+	border-color: white;
+}
+.expander row:active:hover,
+.expander:active:hover {
+    engine: adwaita;
+	color: @panel_color;
+	border-color: @panel_color;
+}
+.expander row:selected:active:hover,
+.expander row:selected:active:focus:hover {
+    engine: adwaita;
+	color: white;
+	border-color: white;
+}
+.expander row:insensitive,
+.expander row:selected:insensitive,
+.expander row:selected:focus:insensitive,
+.expander:insensitive {
+    engine: adwaita;
+	color: @insensitive_fg_color;
+	border-color: @insensitive_fg_color;
+}
+.expander row:active:insensitive,
+.expander row:selected:active:insensitive,
+.expander row:selected:active:focus:insensitive,
+.expander:active:insensitive {
+    engine: adwaita;
+	color: @insensitive_fg_color;
+	border-color: @insensitive_fg_color;
+}
+
